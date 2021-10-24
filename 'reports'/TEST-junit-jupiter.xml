@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="JUnit Jupiter" tests="3" skipped="0" failures="0" errors="0" time="0.054" hostname="DESKTOP-RFABE9M" timestamp="2021-10-24T08:01:58">
+<testsuite name="JUnit Jupiter" tests="3" skipped="0" failures="0" errors="0" time="0.059" hostname="DESKTOP-RFABE9M" timestamp="2021-10-24T11:27:40">
 <properties>
 <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
 <property name="file.encoding" value="Cp1252"/>
@@ -59,7 +59,7 @@
 <property name="user.timezone" value="Africa/Luanda"/>
 <property name="user.variant" value=""/>
 </properties>
-<testcase name="whenThis_thenThat()" classname="FirstUnitTest" time="0.014">
+<testcase name="whenThis_thenThat()" classname="FirstUnitTest" time="0.019">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:FirstUnitTest]/[method:whenThis_thenThat()]
 display-name: whenThis_thenThat()
@@ -71,7 +71,7 @@ unique-id: [engine:junit-jupiter]/[class:FirstUnitTest]/[method:whenSomething_th
 display-name: whenSomething_thenSomething()
 ]]></system-out>
 </testcase>
-<testcase name="whenSomethingElse_thenSomethingElse()" classname="FirstUnitTest" time="0">
+<testcase name="whenSomethingElse_thenSomethingElse()" classname="FirstUnitTest" time="0.004">
 <system-out><![CDATA[
 unique-id: [engine:junit-jupiter]/[class:FirstUnitTest]/[method:whenSomethingElse_thenSomethingElse()]
 display-name: whenSomethingElse_thenSomethingElse()

@@ -1,4 +1,4 @@
-pipeline { 
+pipeline {
   agent any 
     stages { 
       stage('Checkout Codebase') { 
@@ -8,16 +8,23 @@ pipeline {
            url: 'git@github.com:mnorm88/multithreading-example-1.git']]] 
          } 
        } 
-       stage('Build') { 
-         steps { 
-            sh 'gcc mt-example-0.c -lpthread’ 
-           } 
+      
+       stage('Build'){
+            steps{
+                sh 'mkdir lib'
+                sh 'cd lib/ ; wget https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.8.1/junit-platform-console-standalone-1.8.1.jar'
+                sh  javac -d target -cp target;"../lib/junit-platform-console-standalone-1.8.1.jar" src/test/java/FirstUnitTest.java
+            }
         }
-       stage('Test') { 
-         steps { sh './a.out’ } 
-       } 
-       stage('Deploy’) {
-        steps { sh 'echo Done!’ }
-       } 
-  } 
-} 
+
+        stage('Test'){
+            steps{
+                sh java -jar ../lib/junit-platform-console-standalone-1.8.1.jar --class-path target --select-class FirstUnitTest --reports-dir='reports'
+                junit 'src/reports/*-jupiter.xml'
+            }
+        }
+
+        
+    }
+
+}
