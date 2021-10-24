@@ -18,7 +18,7 @@ pipeline {
 
         stage('Test'){
             steps{
-                sh java -jar "../lib/junit-platform-console-standalone-1.8.1.jar" --class-path target --select-class FirstUnitTest --reports-dir='reports'
+                sh java -jar "../lib/junit-platform-console-standalone-1.8.1.jar" -cp target --select-class FirstUnitTest
                 junit 'src/reports/*-jupiter.xml'
             }
         }
