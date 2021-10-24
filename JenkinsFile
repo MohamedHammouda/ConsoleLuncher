@@ -11,6 +11,7 @@ pipeline {
        stage('Build'){
             steps{
                 bat 'mkdir lib'
+                curl.exe -o index.html https://www.meteo.tn
                 
                
             }
