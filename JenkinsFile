@@ -10,7 +10,8 @@ pipeline {
       
        stage('Build'){
             steps{
-                bat 'mkdir lib';'cd lib'
+                bat 'mkdir lib'
+                bat 'cd lib'
           
                 
                
