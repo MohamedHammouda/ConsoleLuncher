@@ -12,13 +12,13 @@ pipeline {
             steps{
                 sh 'mkdir lib'
                 sh 'cd lib/ ; wget https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.8.1/junit-platform-console-standalone-1.8.1.jar'
-                sh  javac -d target -cp target;"../lib/junit-platform-console-standalone-1.8.1.jar" src/test/java/FirstUnitTest.java
+                javac -d target -cp target;"../lib/junit-platform-console-standalone-1.8.1.jar" src/test/java/FirstUnitTest.java
             }
         }
 
         stage('Test'){
             steps{
-                sh java -jar "../lib/junit-platform-console-standalone-1.8.1.jar" -cp target -c FirstUnitTest
+                java -jar "../lib/junit-platform-console-standalone-1.8.1.jar" -cp target -c FirstUnitTest
                 junit 'src/reports/*-jupiter.xml'
             }
         }
