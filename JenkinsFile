@@ -3,21 +3,31 @@ pipeline {
     stages { 
       stage('Checkout Codebase') { 
         steps { 
-           checkout scm: [$class: 'GitSCM’, 
-           userRemoteConfigs: [[credentialsId: GitHubSShkey’,
+           checkout scm: [$class: 'GitSCMâ€™, 
+           userRemoteConfigs: [[credentialsId: GitHubSShkeyâ€™,
            url: 'git@github.com:mnorm88/multithreading-example-1.git']]] 
          } 
        } 
-       stage('Build') { 
-         steps { 
-            sh 'gcc mt-example-0.c -lpthread’ 
-           } 
+       stage('Build'){
+            steps{
+                sh 'mkdir lib'
+                sh 'cd lib/ ; wget https://repo1.maven.org/maven2/org/junit/platform/junit-platform-console-standalone/1.7.0/junit-platform-console-standalone-1.7.0-all.jar'
+                sh 'cd src ; javac -cp "../lib/junit-platform-console-standalone-1.7.0-all.jar" CarTest.java Car.java App.java'
+            }
         }
-       stage('Test') { 
-         steps { sh './a.out’ } 
-       } 
-       stage('Deploy’) {
-        steps { sh 'echo Done!’ }
-       } 
-  } 
-} 
+
+        stage('Test'){
+            steps{
+                sh 'cd src/ ; java -jar ../lib/junit-platform-console-standalone-1.7.0-all.jar -cp "." --select-class CarTest --reports-dir="reports"'
+                junit 'src/reports/*-jupiter.xml'
+            }
+        }
+
+        stage('Deploy'){
+            steps{
+                sh 'cd src/ ; java App' 
+            }
+        }
+    }
+
+}
