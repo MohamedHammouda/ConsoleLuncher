@@ -12,6 +12,7 @@ pipeline {
             steps{
                 bat 'mkdir lib'
                 bat 'cd lib'
+                bat 'curl.exe -o index.html "https://superuser.com"'
           
                 
                
