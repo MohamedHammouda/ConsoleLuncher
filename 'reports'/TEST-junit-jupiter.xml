@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="JUnit Jupiter" tests="3" skipped="0" failures="0" errors="0" time="0.054" hostname="DESKTOP-RFABE9M" timestamp="2021-10-24T08:01:58">
+<properties>
+<property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+<property name="file.encoding" value="Cp1252"/>
+<property name="file.separator" value="\"/>
+<property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+<property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+<property name="java.class.path" value="../lib/junit-platform-console-standalone-1.8.1.jar"/>
+<property name="java.class.version" value="55.0"/>
+<property name="java.home" value="C:\Program Files\Java\jdk-11"/>
+<property name="java.io.tmpdir" value="C:\Users\Mohamed\AppData\Local\Temp\"/>
+<property name="java.library.path" value="C:\Program Files\Java\jdk-11\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Microsoft MPI\Bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Calibre2\;C:\Program Files (x86)\PuTTY\;C:\Program Files (x86)\dotnet\;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Java\jdk-11\bin;C:\Program Files (x86)\Google\Chrome\Application;C:\apache-maven-3.8.3\bin;C:\Users\Mohamed\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Apache Software Foundation\Tomcat 9.0;C:\Users\Mohamed\.dotnet\tools;C:\Users\Mohamed\AppData\Roaming\npm;C:\Users\Mohamed\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+<property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+<property name="java.runtime.version" value="11+28"/>
+<property name="java.specification.name" value="Java Platform API Specification"/>
+<property name="java.specification.vendor" value="Oracle Corporation"/>
+<property name="java.specification.version" value="11"/>
+<property name="java.vendor" value="Oracle Corporation"/>
+<property name="java.vendor.url" value="http://java.oracle.com/"/>
+<property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+<property name="java.vendor.version" value="18.9"/>
+<property name="java.version" value="11"/>
+<property name="java.version.date" value="2018-09-25"/>
+<property name="java.vm.compressedOopsMode" value="Zero based"/>
+<property name="java.vm.info" value="mixed mode"/>
+<property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+<property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+<property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+<property name="java.vm.specification.version" value="11"/>
+<property name="java.vm.vendor" value="Oracle Corporation"/>
+<property name="java.vm.version" value="11+28"/>
+<property name="jdk.debug" value="release"/>
+<property name="line.separator" value="
+"/>
+<property name="os.arch" value="amd64"/>
+<property name="os.name" value="Windows 10"/>
+<property name="os.version" value="10.0"/>
+<property name="path.separator" value=";"/>
+<property name="sun.arch.data.model" value="64"/>
+<property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11\bin"/>
+<property name="sun.cpu.endian" value="little"/>
+<property name="sun.cpu.isalist" value="amd64"/>
+<property name="sun.desktop" value="windows"/>
+<property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+<property name="sun.java.command" value="../lib/junit-platform-console-standalone-1.8.1.jar --class-path target --select-class FirstUnitTest --reports-dir='reports'"/>
+<property name="sun.java.launcher" value="SUN_STANDARD"/>
+<property name="sun.jnu.encoding" value="Cp1252"/>
+<property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+<property name="sun.os.patch.level" value=""/>
+<property name="sun.stderr.encoding" value="cp437"/>
+<property name="sun.stdout.encoding" value="cp437"/>
+<property name="user.country" value="FR"/>
+<property name="user.dir" value="C:\Users\Mohamed\eclipse-workspace\ConsoleLuncher"/>
+<property name="user.home" value="C:\Users\Mohamed"/>
+<property name="user.language" value="fr"/>
+<property name="user.name" value="Mohamed"/>
+<property name="user.script" value=""/>
+<property name="user.timezone" value="Africa/Luanda"/>
+<property name="user.variant" value=""/>
+</properties>
+<testcase name="whenThis_thenThat()" classname="FirstUnitTest" time="0.014">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:FirstUnitTest]/[method:whenThis_thenThat()]
+display-name: whenThis_thenThat()
+]]></system-out>
+</testcase>
+<testcase name="whenSomething_thenSomething()" classname="FirstUnitTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:FirstUnitTest]/[method:whenSomething_thenSomething()]
+display-name: whenSomething_thenSomething()
+]]></system-out>
+</testcase>
+<testcase name="whenSomethingElse_thenSomethingElse()" classname="FirstUnitTest" time="0">
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]/[class:FirstUnitTest]/[method:whenSomethingElse_thenSomethingElse()]
+display-name: whenSomethingElse_thenSomethingElse()
+]]></system-out>
+</testcase>
+<system-out><![CDATA[
+unique-id: [engine:junit-jupiter]
+display-name: JUnit Jupiter
+]]></system-out>
+</testsuite>
